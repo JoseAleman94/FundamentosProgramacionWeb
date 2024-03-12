@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>RETO #5 </title>
+    <link rel="stylesheet" href="css/reto5.css">
+    <link rel="icon" href="imagenes/favicon.png">
+    
+</head>
+
+<body>
+
+    <header>
+
+      </header>
+
+<section>
+      <nav class="navbar navbar-expand-lg fixed-top fondo1">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="imagenes/Cenfotec.png" alt="Cenfotec" height="25px" width="220px" class="img-fluid img-cenfotec">
+            </a>
+
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mx-auto mb-2 mb-md-0 text-center">
+                    <li class="nav-item">
+                        <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white optmenu" href="#" id="desplegable1" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Retos
+                        </a>
+                        <div class="dropdown-menu text-left" aria-labelledby="desplegable1">
+                            <a class="dropdown-item optmenu" href="reto1.html">Reto 1</a>
+                            <a class="dropdown-item optmenu" href="reto2.html">Reto 2</a>
+                            <a class="dropdown-item optmenu" href="reto3.html">Reto 3</a>
+                            <a class="dropdown-item optmenu" href="reto4.html">Reto 4</a>
+                            <a class="dropdown-item optmenu" href="reto5.html">Reto 5</a>
+                            <a class="dropdown-item optmenu" href="reto6.html">Reto 6</a>
+                            <a class="dropdown-item optmenu" href="reto7.html">Reto 7</a>
+                            <a class="dropdown-item optmenu" href="reto8.html">Reto 8</a>
+                            <a class="dropdown-item optmenu" href="reto9.html">Reto 9</a>
+                            <a class="dropdown-item optmenu" href="reto10.html">Reto 10</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+
+<br><br><br><br>
+
+<body>
+    <header class="container-fluid">
+    </header>
+    <section class="container inicio">
+        <div class="row">
+            <div class="col-sm-4 col-md-6 col-lg-6">
+                <div class="logo2">
+                    <img src="imagenes/grupoQ.webp" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-sm-8 col-md-6 col-lg-6">
+                <div class="text-center container hyundai pb-0 pt-0">
+                    <h1>GRUPO Q</h1>
+                    <p class="pt-3">Hemos seleccionado los mejores modelos para vos. Tenemos autos para todos los presupuestos. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-5 col-md-5 col-lg-5">
+                <div class="inputs pt-4">
+                    <h2 class="pb-2 pt-0">Seleccione el vehículo</h2>
+                    <h4>Modelo</h4>
+                    <select name="modelo" id="modelo">
+                        <option selected disabled>Seleccione un modelo:</option>
+                        <option>Accent</option>
+                        <option>Elantra</option>
+                        <option>Tucson</option>
+                        <option>Santa Fe</option>
+                    </select>
+                    <div class="pt-3 pb-3"></div>
+                    <h4>Versión</h4>
+                    <select name="version" id="version">
+                        <option selected disabled>Seleccione una versión:</option>
+                        <option>4x2</option>
+                        <option>4x4</option>
+                    </select>
+                    <div class="pt-5">
+                        <button class="btn btn-danger btn-lg mb-5 mt-0 calcular" onclick="calcular()">Calcular</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-7 col-md-7 col-lg-7">
+                <div class="text-center imagen3 pt-5">
+                    <img src="imagenes/auto1.png" alt="Vehiculo" id="imagen" height="300px" class="pt-5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="text-center footer"> Derechos Reservados</footer>
+    <footer class="text-center footer"> @Jose Aleman 2024</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+    <!-- programacion LOGIN -->
+    <script src="js/reto5.js"></script>
+
+
+    <!-- libreria SWEETALERT-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- interactividad Lottie JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+    <!-- libreria Lottie JS-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+
+
+
+</body>
+
+</html>

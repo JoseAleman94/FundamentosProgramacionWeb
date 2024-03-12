@@ -1,0 +1,302 @@
+.titulo1 {
+    color: #fff;
+    font-size: 35px;
+}
+
+p {
+    font-size: 20px;
+}
+
+header {
+    background-color: white;
+    padding: 20px 0px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.animacion2 {
+    width: 60%;
+}
+
+.usuario {
+    width: 70%;
+}
+
+a {
+    font-weight: bold;
+    color: #0063be;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0063be;
+    text-decoration: none;
+}
+
+input:checked {
+    background-color: #0063be !important;
+}
+
+input,
+select {
+    cursor: pointer;
+}
+
+
+@media (max-width:575px) {
+    .animacion1 {
+        width: 80% !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+    .animacion2 {
+        width: 100% !important;
+    }
+}
+
+/*********************  MENU NAV ******************************/
+
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
+    color: #000;
+    font-family: 'reboto', sans-serif;
+    font-size: 14px;
+}
+
+.optmenu {
+    font-family: 'reboto', sans-serif;
+    font-size: 14px;
+    transition: all 1s solid;
+}
+
+.optmenu:hover {
+    color: #fff;
+    background-color: #000;
+    transition: all 1s solid;
+}
+
+.optmenu:active {
+    background-color: brown;
+}
+
+/* PERSONALIZACION MENU HAMBURGUESA */
+
+.navbar-toggler {
+    background-color: #d6dbe3;
+    border: 3px solid #fff;
+}
+
+.navbar-toggler:hover {
+    background-color: #d6dbe3;
+}
+
+.custom-toggler .navbar-toggler {
+    background-color: #fff;
+}
+
+/* PERSONALIZACION LINEAS DEL MENU HAMBURGUESA */
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}         
+.custom-toggler .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}   
+
+/*********************  ENCABEZADO BANNER WEB INICIAL ******************************/
+
+
+.espacio {
+    padding: 110px 0;
+}
+
+.espacio2 {
+    padding: 140px 100px;
+}
+
+
+/*formulario*/
+
+label {
+    color: #000;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bolder;
+    float: left;
+}
+
+/*********************  PIE DE PAGINA ******************************/
+
+footer {
+    color: #fff;
+    position: fixed;
+    padding: 20px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,70,155,255);
+}
+
+
+/********************* ESTILOS GENRALES ******************************/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.titulajes {
+    color: #20579e;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.fondo1 {
+    background-color: rgba(0,70,155,255);
+    box-shadow: 5px 5px 8px #fff;
+}
+
+.img-cenfotec {
+    border-radius: 200px;
+}
+
+
+/*MEDIAS QUERYS*/
+
+@media (max-width:575px) {
+    .card {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .bannerparallax {
+        height: calc(100vh);
+    }
+}
+
+@media (min-width:576px) {
+    .card {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 16rem !important;
+    }
+    .bannerparallax {
+        height: calc(100vh);
+    }
+    .img {
+        height: fit-content;
+    }
+}
+
+@media (min-width:768px) {
+    .card {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 18rem !important;
+    }
+    .bannerparallax {
+        height: calc(40vh);
+    }
+    .img {
+        height: fit-content;
+    }
+}
+
+/*////////////////////////  ESTILOS PARA EL FORMULARIO  /////////////////////////*/
+
+.banner {
+    background-image: url("../imagenes/bannerChevrolet.jpeg");
+    height: 500px;
+    width: 1750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*botones circulares*/
+
+.btncirculos {
+    padding: 15px;
+    border: none;
+    /*distancia entre ellos*/
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.img img {
+    width: 40%;
+}
+
+.img {
+    padding-top: 20px;
+}
+
+.info {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.info h2 {
+    font-weight: bolder;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.info3 {
+    box-shadow: 3px 3px 10px #4d4d4d;
+    border-radius: 10px;
+    background-color: rgb(238, 238, 238);
+    padding: 40px 20px;
+    border: solid rgb(180, 180, 180) 1px;
+}
+
+.info2 {
+    padding: 10px 80px;
+}
+
+h3 {
+    font-size: 35px;
+    color: rgb(223, 9, 9);
+}
+
+.button1 {
+    background-color: gray;
+    color: white;
+    padding: 10px 19px;
+    border: none;
+    margin: 0 6px;
+}
+
+.button2 {
+    background-color: #21bd5c;
+    color: white;
+    padding: 10px 19px;
+    border: none;
+    margin: 0 6px;
+}
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>RETO #4 </title>
+    <link rel="stylesheet" href="css/reto4.css">
+    <link rel="icon" href="imagenes/favicon.png">
+</head>
+
+<body>
+
+    <header>
+
+      </header>
+
+      <section>
+      <nav class="navbar navbar-expand-lg fixed-top fondo1">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="imagenes/Cenfotec.png" alt="Cenfotec" height="25px" width="220px" class="img-fluid img-cenfotec">
+            </a>
+
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mx-auto mb-2 mb-md-0 text-center">
+                    <li class="nav-item">
+                      <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white optmenu" href="#" id="desplegable1" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Retos
+                        </a>
+                        <div class="dropdown-menu text-left" aria-labelledby="desplegable1">
+                            <a class="dropdown-item optmenu" href="reto1.html">Reto 1</a>
+                            <a class="dropdown-item optmenu" href="reto2.html">Reto 2</a>
+                            <a class="dropdown-item optmenu" href="reto3.html">Reto 3</a>
+                            <a class="dropdown-item optmenu" href="reto4.html">Reto 4</a>
+                            <a class="dropdown-item optmenu" href="reto5.html">Reto 5</a>
+                            <a class="dropdown-item optmenu" href="reto6.html">Reto 6</a>
+                            <a class="dropdown-item optmenu" href="reto7.html">Reto 7</a>
+                            <a class="dropdown-item optmenu" href="reto8.html">Reto 8</a>
+                            <a class="dropdown-item optmenu" href="reto9.html">Reto 9</a>
+                            <a class="dropdown-item optmenu" href="reto10.html">Reto 10</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+
+<br><br><br><br>
+
+
+<main>
+    <div class="container mb-5">
+        <div class="d-flex justify-content-center align-items-center p-3">
+          <div class="ms-5 text-dark">
+            <h1 class="text-center">Hermosas ciudades que visitar en Suiza </h1>
+          </div>
+        </div>
+      </div>
+    <div class="container">
+      <div class="row gx-5 gy-4 mt-4">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <section>
+            <div>
+               <p> Suiza es catalogado como uno de los paises mas caros de Europa, sin embargo no es parte de la Union Europea.
+
+                Suiza es conocida por sus paisajes alpinos, sus lagos y sus pueblos medievales. Las ciudades son limpias y seguras, y el transporte público es excelente. Además, el país es famoso por su relojería y su chocolate.</p>
+               </p>
+              <p> Te mostrare 5 hermosos lugares que no puedes dejar de visitar en tu paso por Suiza. </p>
+            </div>
+          </section>
+          <section>
+            <div>
+              <select class="form-select" id="ciudades">
+                <option value="0" selected disabled>Seleccione una ciudad</option>
+                <option value="1">LUCERNA</option>
+                <option value="2">ZURICH</option>
+                <option value="3">BERNA</option>
+                <option value="4">ZERMATT</option>
+                <option value="5">INTERLAKEN</option>
+              </select>
+            </div>
+            <div class="mt-4">
+              <button class="btn btn-dark" id="btn-clean">Reiniciar</button>
+            </div>
+          </section>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 mb-5">
+          <div class="d-flex justify-content-center mb-2" id="output-img"></div>
+          <div class="text-center fst-italic pb-5" id="output-txt"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+    <footer class="text-center footer"> Derechos Reservados</footer>
+    <footer class="text-center footer"> @Jose Aleman 2024</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+    <!-- programacion LOGIN -->
+    <script src="js/reto4.js"></script>
+
+
+    <!-- libreria SWEETALERT-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- interactividad Lottie JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+    <!-- libreria Lottie JS-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,366 @@
+/*********************  MENU NAV ******************************/
+
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
+    color: #000;
+    font-family: 'reboto', sans-serif;
+    font-size: 14px;
+}
+
+.optmenu {
+    font-family: 'reboto', sans-serif;
+    font-size: 14px;
+    transition: all 1s solid;
+}
+
+.optmenu:hover {
+    color: #fff;
+    background-color: #000;
+    transition: all 1s solid;
+}
+
+.optmenu:active {
+    background-color: brown;
+}
+
+/* PERSONALIZACION MENU HAMBURGUESA */
+
+.navbar-toggler {
+    background-color: #d6dbe3;
+    border: 3px solid #fff;
+}
+
+.navbar-toggler:hover {
+    background-color: #d6dbe3;
+}
+
+.custom-toggler .navbar-toggler {
+    background-color: #fff;
+}
+
+/* PERSONALIZACION LINEAS DEL MENU HAMBURGUESA */
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}         
+.custom-toggler .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}   
+
+
+
+
+/*********************  ENCABEZADO BANNER WEB INICIAL ******************************/
+
+.banner-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    /*control altura del banner*/
+    height: calc(100vh);
+    background-position: center;
+    background-image: url('../imagenes/JS.png');
+    background-color: #928372;
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+}
+
+.espacio {
+    padding: 120px 0;
+}
+
+.espacio2 {
+    padding: 140px 0;
+}
+
+
+
+.linea {
+    margin: 5rem 0;
+}
+
+.bannerparallax {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    /*control altura del banner*/
+    height: calc(40vh);
+    background-position: center;
+    background-image: url('../imagenes/JS.png');
+    background-color: #55979e;
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/*formulario*/
+
+label {
+    color: #000;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bolder;
+    float: left;
+}
+
+
+/* Para agregar un borde cuando se activan los campos */
+
+input:hover {
+    outline: 3px solid brown;
+}
+
+textarea:hover {
+    outline: 3px solid brown;
+}
+
+
+/* Propiedades de los campos */
+
+input,
+textarea {
+    cursor: pointer;
+    background-color: #e2e2e2 !important;
+}
+
+
+/* Propiedades de los botones */
+
+.enviar {
+    width: 170px;
+    height: 60px;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 26px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px 20px;
+    border-width: 2px;
+    border-color: #e7cdf5;
+    background-color: brown !important;
+}
+
+.borrar {
+    color: #fff;
+    width: 170px;
+    height: 60px;
+    margin: 0 auto;
+    font-size: 26px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px 20px;
+    border-width: 2px;
+    border-color: #e7cdf5;
+    background-color: brown !important;
+}
+
+
+/* validacion campo TextArea */
+
+textarea {
+    resize: none;
+    /*
+  height:150px;
+  max-height:150px;
+  min-height:150px;
+  max-width:auto;
+  min-width:400px;*/
+}
+
+
+/*********************  PIE DE PAGINA ******************************/
+
+footer {
+    color: #fff;
+    position: fixed;
+    padding: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,70,155,255);
+}
+
+
+/********************* MEDIAS QUERYS ******************************/
+
+@media (max-width: 575px) {
+    html {
+        font-size: 1rem;
+    }
+    .logo img {
+        
+        display: block !important;
+        margin:0 auto !important; 
+        /*margin-left: 50px;*/
+    }
+    .navbar-toggler {
+        margin: 0 auto;
+    }
+    .titulo {
+        font-size: 2.5rem;
+        margin-top: 150px;
+    }
+    p {
+        font-size: 1.1rem !important;
+    }
+    .bannerparallax {
+        height: calc(100vh);
+    }
+}
+
+
+/********************* ESTILOS GENRALES ******************************/
+
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.titulajes {
+    color: #20579e;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.fondo1 {
+    background-color:rgba(0,70,155,255);
+    box-shadow: 1px 0px 1px #fff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.fondo2 {
+    background-color: #d6dbe3;
+}
+
+.fondo3 {
+    background-color: #fae308;
+}
+
+.img-cenfotec {
+    border-radius: 60px;
+
+}
+
+
+
+
+/********************* ESTILOS BOTONES ******************************/
+
+.btnentrada {
+    cursor: pointer;
+    background-color: #928372;
+    width: 200px;
+    height: 60px;
+    border: 3px solid #e4e4e4;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding: 15px 50px;
+    text-decoration: none;
+    transition: linear 0.5s;
+}
+
+.btnentrada:hover {
+    width: 200px;
+    height: 60px;
+    background-color: #e4e4e4;
+    color: #000;
+    border: 3px solid #0b3e64;
+    text-decoration: none;
+    padding: 15px 50px;
+    font-size: 2.2rem;
+    transition: linear 0.5s;
+}
+
+.goto-top {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 95px;
+    height: 90px;
+    transition: linear 0.5s;
+}
+
+
+/*TARJETAS*/
+
+.card-title {
+    font-weight: bolder !important;
+}
+
+.card p {
+    font-size: 18px;
+}
+
+
+/*MEDIAS QUERYS*/
+
+@media (max-width:575px) {
+    .card {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .bannerparallax {
+        height: calc(100vh);
+    }
+}
+
+@media (min-width:576px) {
+    .card {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 16rem !important;
+    }
+    .bannerparallax {
+        height: calc(100vh);
+    }
+}
+
+@media (min-width:768px) {
+    .card {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 18rem !important;
+    }
+    .bannerparallax {
+        height: calc(40vh);
+    }
+}

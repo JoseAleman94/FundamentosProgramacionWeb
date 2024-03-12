@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>RETO #8 </title>
+    <link rel="stylesheet" href="css/reto8.css">
+    <link rel="icon" href="imagenes/favicon.png">
+</head>
+
+<body>
+
+    <header class="espacio"></header>
+ 
+
+    <nav class="navbar navbar-expand-lg fixed-top fondo1">
+
+        <div class="container">
+
+            <a class="navbar-brand logo" href="index.html">
+                <img src="imagenes/Cenfotec.png" alt="Cenfotec" height="25px" width="220px" class="img-fluid img-cenfotec">
+            </a>
+
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mx-auto mb-2 mb-md-0 text-center">
+                    <li class="nav-item">
+                        <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white optmenu" href="#" id="desplegable1" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Retos
+                        </a>
+                        <div class="dropdown-menu text-left" aria-labelledby="desplegable1">
+                            <a class="dropdown-item optmenu" href="reto1.html">Reto 1</a>
+                            <a class="dropdown-item optmenu" href="reto2.html">Reto 2</a>
+                            <a class="dropdown-item optmenu" href="reto3.html">Reto 3</a>
+                            <a class="dropdown-item optmenu" href="reto4.html">Reto 4</a>
+                            <a class="dropdown-item optmenu" href="reto5.html">Reto 5</a>
+                            <a class="dropdown-item optmenu" href="reto6.html">Reto 6</a>
+                            <a class="dropdown-item optmenu" href="reto7.html">Reto 7</a>
+                            <a class="dropdown-item optmenu" href="reto8.html">Reto 8</a>
+                            <a class="dropdown-item optmenu" href="reto9.html">Reto 9</a>
+                            <a class="dropdown-item optmenu" href="reto10.html">Reto 10</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<br><br>
+
+
+
+    <h1>Registro de Datos Academicos</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <label for="nombre">Nombre Estudiante:</label>
+                <input type="text" id="nombre">
+
+                <label for="apellidos">Apellidos Estudiante:</label>
+                <input type="text" id="apellidos">
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+                <label for="nota1">Ingrese Nota 1:</label>
+                <input type="number" id="nota1">
+
+                <label for="nota2">Ingrese Nota 2:</label>
+                <input type="number" id="nota2">
+
+                <label for="nota3"> Ingrese Nota 3:</label>
+                <input type="number" id="nota3">
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+                <label for="examen"> Ingrese Nota Examen:</label>
+                <input type="number" id="examen">
+
+                <label for="proyecto"> Ingrese Nota Proyecto:</label>
+                <input type="number" id="proyecto">
+            </div>
+
+
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-outline-success text-white" onclick="nuevoEstudiante();">Agregar</button>
+
+
+                <label for="seleccionarEstudiante">Seleccione el Estudiante</label>
+                <!-- Se hace un select vacio sin option para agregar dinamicamente -->
+                <select  id="seleccionarEstudiante" onchange="calcularPromedioEstudiante();">
+                    <option>Seleccione un Estudiante</option>
+                </select>
+
+                <button class="btn btn-outline-danger text-white" onclick="calcularPromedioEstudiante();">Calcular el Promedio Final </button>
+
+                <p class="text-white" id="resultadoFinal"></p>
+            </div>
+        </div>
+
+
+    <footer class="text-center footer espacios"> @Jose Aleman 2024</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+    <!-- programacion LOGIN -->
+    <script src="js/reto8.js"></script>
+
+
+    <!-- libreria SWEETALERT-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- interactividad Lottie JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+    <!-- libreria Lottie JS-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+
+
+
+</body>
+
+</html>

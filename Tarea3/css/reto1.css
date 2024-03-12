@@ -1,0 +1,342 @@
+.titulo1 {
+    color: #fff;
+    font-size: 35px;
+}
+
+p {
+    font-size: 20px;
+}
+
+header {
+    background-color: #0063be;
+}
+
+footer {
+    color: #fff;
+    padding: 20px 0px;
+    font-size: 20px;
+    background-color: #0063be;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.animacion2 {
+    width: 60%;
+}
+
+.usuario {
+    width: 70%;
+}
+
+a {
+    font-weight: bold;
+    color: #0063be;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0063be;
+    text-decoration: none;
+}
+
+input:checked {
+    background-color: #0063be !important;
+}
+
+input,
+select {
+    cursor: pointer;
+}
+/*estilo que permite mostrar los campos validados con un borde de color rojo*/
+
+.error {
+    border: red solid 1px;
+}
+
+.btninicio {
+    color: #fff;
+    background-color: #0063be !important;
+    font-size: 20px;
+    width: 100%;
+}
+
+#forgot-pass {
+    font-weight: bold;
+    text-align: end;
+    font-size: 12px;
+}
+
+@media (max-width:575px) {
+    .animacion1 {
+        width: 80% !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+    .animacion2 {
+        width: 100% !important;
+    }
+}
+
+/*********************  MENU NAV ******************************/
+
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
+    color: #000;
+    font-family: 'reboto', sans-serif;
+    font-size: 14px;
+}
+
+.optmenu {
+    font-family: 'reboto', sans-serif;
+    font-size: 14px;
+    transition: all 1s solid;
+}
+
+.optmenu:hover {
+    color: #fff;
+    background-color: #000;
+    transition: all 1s solid;
+}
+
+.optmenu:active {
+    background-color: brown;
+}
+
+/* PERSONALIZACION MENU HAMBURGUESA */
+
+.navbar-toggler {
+    background-color: #d6dbe3;
+    border: 3px solid #fff;
+}
+
+.navbar-toggler:hover {
+    background-color: #d6dbe3;
+}
+
+.custom-toggler .navbar-toggler {
+    background-color: #fff;
+}
+
+/* PERSONALIZACION LINEAS DEL MENU HAMBURGUESA */
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}         
+.custom-toggler .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}   
+
+/*********************  ENCABEZADO BANNER WEB INICIAL ******************************/
+
+.banner-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    /*control altura del banner*/
+    height: calc(100vh);
+    background-position: center;
+    background-image: url('../imagenes/JS.png');
+    background-color: #928372;
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+}
+
+.espacio {
+    padding: 110px 0;
+}
+
+.espacio2 {
+    padding: 140px 100px;
+}
+
+
+/*formulario*/
+
+label {
+    color: #000;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bolder;
+    float: left;
+}
+
+
+/* Para agregar un borde cuando se activan los campos */
+
+input:hover {
+    outline: 3px solid brown;
+}
+
+textarea:hover {
+    outline: 3px solid brown;
+}
+
+/*********************  PIE DE PAGINA ******************************/
+
+footer {
+    color: #fff;
+    padding: 20px 0px;
+    font-size: 20px;
+    background-color: rgba(0,70,155,255);
+    box-shadow: #77767c 5px 5px 8px;
+}
+
+footer h3 {
+    color: #a5204d;
+    letter-spacing: 1px;
+    margin: 30px 0 20px;
+}
+
+footer .copyright {
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+
+/********************* ESTILOS GENRALES ******************************/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.titulajes {
+    color: #20579e;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.fondo1 {
+    background-color: rgba(0,70,155,255);
+    box-shadow: 5px 5px 8px #fff;
+}
+
+.fondo2 {
+    background-color: #d6dbe3;
+}
+
+.fondo3 {
+    background-color: #fae308;
+}
+
+.img-cenfotec {
+    border-radius: 200px;
+}
+
+.img-login {
+    box-shadow: #20579e 1px 1px 1px 1px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+/********************* ESTILOS BOTONES ******************************/
+
+.btnentrada {
+    cursor: pointer;
+    background-color: #928372;
+    width: 200px;
+    height: 60px;
+    border: 3px solid #e4e4e4;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding: 15px 50px;
+    text-decoration: none;
+    transition: linear 0.5s;
+}
+
+.btnentrada:hover {
+    width: 200px;
+    height: 60px;
+    background-color: #e4e4e4;
+    color: #000;
+    border: 3px solid #0b3e64;
+    text-decoration: none;
+    padding: 15px 50px;
+    font-size: 2.2rem;
+    transition: linear 0.5s;
+}
+
+.goto-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    width: 75px;
+    height: 50px;
+}
+
+
+/*TARJETAS*/
+
+.card-title {
+    font-weight: bolder !important;
+}
+
+.card p {
+    font-size: 18px;
+}
+
+
+/*MEDIAS QUERYS*/
+
+@media (max-width:575px) {
+    .card {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .bannerparallax {
+        height: calc(100vh);
+    }
+}
+
+@media (min-width:576px) {
+    .card {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 16rem !important;
+    }
+    .bannerparallax {
+        height: calc(100vh);
+    }
+}
+
+@media (min-width:768px) {
+    .card {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 18rem !important;
+    }
+    .bannerparallax {
+        height: calc(40vh);
+    }
+}

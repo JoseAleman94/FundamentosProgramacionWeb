@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>CENFOTEC-PROFEFRANK</title>
+    <link href="imagenes/favicon.png" rel="icon">
+    <link href="css/reto9.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="espacio"></div>
+    </header>
+
+    <section>
+    <nav class="navbar navbar-expand-lg fixed-top fondo1">
+
+        <div class="container">
+
+            <a class="navbar-brand logo" href="index.html">
+                <img src="imagenes/Cenfotec.png" alt="Cenfotec" height="25px" width="220px" class="img-fluid img-cenfotec">
+            </a>
+
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mx-auto mb-2 mb-md-0 text-center">
+                    <li class="nav-item">
+                        <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white optmenu" href="#" id="desplegable1" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Retos
+                        </a>
+                        <div class="dropdown-menu text-left" aria-labelledby="desplegable1">
+                            <a class="dropdown-item optmenu" href="reto1.html">Reto 1</a>
+                            <a class="dropdown-item optmenu" href="reto2.html">Reto 2</a>
+                            <a class="dropdown-item optmenu" href="reto3.html">Reto 3</a>
+                            <a class="dropdown-item optmenu" href="reto4.html">Reto 4</a>
+                            <a class="dropdown-item optmenu" href="reto5.html">Reto 5</a>
+                            <a class="dropdown-item optmenu" href="reto6.html">Reto 6</a>
+                            <a class="dropdown-item optmenu" href="reto7.html">Reto 7</a>
+                            <a class="dropdown-item optmenu" href="reto8.html">Reto 8</a>
+                            <a class="dropdown-item optmenu" href="reto9.html">Reto 9</a>
+                            <a class="dropdown-item optmenu" href="reto10.html">Reto 10</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+    <section class="container text-center pt-3 bg-light">
+        <div class="pt-5 mt-5 mb-5 text-center">
+
+        </div>
+
+        <div class="row container pt-5 banner1">
+            <div class="col-md-12">
+                <form class="fuente1">
+                    <h2 class="display-6"> Seleccione un producto y luego "mostrar" </h2><br>
+                    <!-- radios con interaccion de usuario -->
+                    <input type="radio" id="radio1" name="r1" class="cursor"> Producto 1
+                    <br>
+                    <input type="radio" id="radio2" name="r1" class="cursor"> Producto 2
+                    <br>
+                    <input type="radio" id="radio3" name="r1" class="cursor"> Producto 3
+                    <br>
+                    <input type="radio" id="radio4" name="r1" class="cursor"> Producto 4
+                    <br>
+                    <input type="radio" id="radio5" name="r1" class="cursor"> Producto 5
+                    <br>
+                    <div class="pt-5"></div>
+                    <input type="button" value="Mostrar" class="btn btn-danger" onClick="mostrar()">
+                    <input type="button" value="Limpiar" class="btn btn-danger" onClick="limpiar()">
+                </form>
+            </div>
+
+            <h2 class="text-white"> ¿Deseas completar esta compra?</h2>
+
+            <div class="container text-center text-white">
+                <h4> Solo un paso mas antes de completar este proceso...</h4><br>
+                <div class="text-center">
+                </div>
+                <div id="ima1" class="text-center" style="display: none;">
+                    <img src="logos.png" alt="logo" class="img-fluid">
+                </div>
+  
+                <form method="post" id="form1" name="form1" class="tam1">
+                    <input type="checkbox" name="c1"> Acepto Terminos y Condiciones <br><br>
+                    <input type="checkbox" name="c2"> Acepto Politicas de Devolucion <br><br>
+
+                    <!-- al dar clic al checkbox Requisitos carga la funcion comprobar() -->
+                    <input type="checkbox" name="c3" onclick="comprobar()"> Verificar<br>
+                    <p id="demo"></p>
+                </form>
+            </div>
+
+                </form>
+
+            </div>
+        </div>
+
+        <div class="pt-5"></div>
+            </div>
+
+        </div>
+
+        <div class="pt-5"></div>
+
+        <footer class="text-center footer"> @Jose Aleman 2024</footer>
+
+    </section>
+
+
+    <!-- cargar sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- cargar programacion JS -->
+    <script src="js/reto9.js"></script>
+    <script src="js/reto9-2.js"></script>
+
+
+</body>
+
+</html>

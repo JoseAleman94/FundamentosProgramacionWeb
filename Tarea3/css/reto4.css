@@ -1,0 +1,145 @@
+/* Estilos generales */
+
+html {
+    font-size: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+
+
+header {
+    padding: 20px;
+}
+
+
+body {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.espacios {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    color: brown;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.titulajes {
+    color: #20579e;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.fondo {
+    background-color: #006aea;
+}
+
+.fondo1 {
+    background-color: rgba(0,70,155,255);
+    box-shadow: 1px 0px 1px #fff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.img-cenfotec {
+    border-radius: 60px;
+
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+input, select {
+    cursor: pointer;
+  }
+
+/*********************  MENU NAV ******************************/
+
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 5px;
+    color: #000;
+    font-family: 'reboto', sans-serif;
+    font-size: 15px;
+}
+
+.optmenu {
+    font-family: 'reboto', sans-serif;
+    font-size: 15px;
+    transition: all 1s solid;
+}
+
+.optmenu:hover {
+    color: #fff;
+    background-color: #000;
+    transition: all 1s solid;
+}
+
+.optmenu:active {
+    background-color: brown;
+}
+
+/* PERSONALIZACION MENU HAMBURGUESA */
+
+.navbar-toggler {
+    background-color: #4973b6;
+    border: 1px solid #fff;
+}
+
+.navbar-toggler:hover {
+    background-color: #d6dbe3;
+}
+
+.custom-toggler .navbar-toggler {
+    background-color: #fff;
+}
+
+/* PERSONALIZACION LINEAS DEL MENU HAMBURGUESA */
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}         
+.custom-toggler .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}   
+
+/* Footer */
+footer {
+    color: #fff;
+    position: fixed;
+    padding: 20px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,70,155,255);
+}
+
+
+

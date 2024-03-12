@@ -1,0 +1,273 @@
+body {
+    background-image: url("bg.jpg");
+    height: 100vh;
+}
+
+.fuente1 {
+    font-size: 20px;
+    color: white;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.negrita {
+    font-weight: bolder;
+}
+
+.tam1 img{
+    width: 30%;
+}
+
+label {
+    font-size: 20px;
+}
+
+
+/* tamaño del radio*/
+
+input[name="r"][value="dato1"],
+[value="dato2"],
+[value="dato3"],
+[value = "dato4"] {
+    margin: 12px 10px;
+    transform: scale(0.8);
+}
+
+
+/*colores del radio con pseudoclases = mascara*/
+
+input[type="radio"]:after {
+    width: 24px;
+    height: 24px;
+    top: -3px;
+    left: -10px;
+    border-radius: 15px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #000;
+}
+
+input[type="radio"]:checked:after {
+    width: 24px;
+    height: 24px;
+    top: -3px;
+    left: -1px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(71, 209, 138);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #000;
+}
+
+p {
+    font-size: 22px;
+}
+.tam1{
+    font-size: 24px;
+}
+
+input[type=checkbox] {
+    transform: scale(2);    
+    margin: 18px 18px;
+}
+
+a {
+    color: #0063be;
+    text-decoration: none;
+}
+
+.img-cenfotec {
+    border-radius: 200px;
+}
+
+/*********************  MENU NAV ******************************/
+
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 5px;
+    color: #000;
+    font-family: 'reboto', sans-serif;
+    font-size: 15px;
+}
+
+.optmenu {
+    font-family: 'reboto', sans-serif;
+    font-size: 15px;
+    transition: all 1s solid;
+}
+
+.optmenu:hover {
+    color: #fff;
+    background-color: #000;
+    transition: all 1s solid;
+}
+
+.optmenu:active {
+    background-color: brown;
+}
+
+/* PERSONALIZACION MENU HAMBURGUESA */
+
+.navbar-toggler {
+    background-color: #d6dbe3;
+    border: 1px solid #fff;
+}
+
+.navbar-toggler:hover {
+    background-color: #d6dbe3;
+}
+
+.custom-toggler .navbar-toggler {
+    background-color: #fff;
+}
+
+/* PERSONALIZACION LINEAS DEL MENU HAMBURGUESA */
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}         
+.custom-toggler .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}      
+
+/* Estilos generales */
+
+html {
+    font-size: 18px;
+}
+
+header {
+    background-color: #000;
+    height: 10px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.logo2 {
+    width: 100%;
+    height: 100%;
+
+}
+
+.imagen3{
+    width: 100%;
+    height: 100%;
+
+}
+
+header {
+    padding: 20px;
+}
+
+.hyundai h1{
+    letter-spacing: 3px;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+
+.banner1 {
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente los elementos hijos */
+    height: 100vh; /* Establece la altura al 100% del viewport height para cubrir toda la pantalla */
+    background-size: cover;
+    background-position: center;
+    background-image: url('../imagenes/boutiqueCorrecta-min.jpg');
+    background-blend-mode: luminosity;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+    background-attachment: fixed;
+}
+
+
+.formatos1 {
+    color: brown;
+}
+
+
+h1 {
+    font-size: 30px;
+    color: brown;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+
+h4 {
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+select {
+    width: 100%;
+    padding: 3px 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.titulajes {
+    color: #20579e;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.fondo {
+    background-color: #006aea;
+}
+
+.fondo1 {
+    background-color:rgba(0,70,155,255);
+    box-shadow: 1px 0px 1px #fff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.img-cenfotec {
+    border-radius: 60px;
+
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+
+input, select {
+    cursor: pointer;
+}
+
+.inicio {
+    border-bottom: 1px solid rgb(143, 50, 50);
+}
+
+/* Footer */
+footer {
+    color: #fff;
+    position: fixed;
+    padding: 20px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,70,155,255);
+}
