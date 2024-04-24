@@ -1,0 +1,555 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+    font-family: 'DM Sans', sans-serif; /* Fallback a una fuente sans-serif en caso de que DM Sans no esté disponible */
+}
+
+h1, h2, h3, h4 {
+    font-family: 'DM Serif Display', serif; /* Fallback a una fuente serif en caso de que DM Serif Display no esté disponible */
+}
+
+p {
+    font-family: 'Oswald', sans-serif; /* Fallback a una fuente sans-serif en caso de que Oswald no esté disponible */
+}
+
+.banner1 {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente los elementos hijos */
+    height: 50vh; /* Establece la altura al 100% del viewport height para cubrir toda la pantalla */
+    background-size: cover;
+    background-position: center;
+    background-image: url('../imagenes/accesorios-min.jpg');
+    background-blend-mode: luminosity;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+    background-attachment: fixed;
+}
+
+.sectionForm {
+    background-color: #f8f8f8;
+}
+.sectionForm .containerForm {
+    width: 80%;
+    padding: 20px;
+}
+.sectionForm .containerForm .formRow {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.sectionForm .containerForm .formRow .colForm {
+    position: relative;
+    width: 100%;
+    padding: 0px 10px;
+    margin: 30px 0px 10px;
+    transition: 0.5s;
+}
+.sectionForm .containerForm .formRow .colForm .inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #000;
+    font-weight: bold;
+}
+.sectionForm .containerForm .formRow .colForm .inputBox input,
+.sectionForm .containerForm .formRow .colForm .inputBox.textarea textarea {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 0px 10px;
+    z-index: 1;
+    color: #000;
+}
+.sectionForm .containerForm .formRow .colForm .inputBox .text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0px 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.sectionForm .containerForm .formRow .colForm .inputBox input:focus + .text,
+.sectionForm .containerForm .formRow .colForm .inputBox input:valid + .text {
+    left: -10px;
+    top: -35px;
+}
+.sectionForm .containerForm .formRow .colForm .inputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+    background-color: white;
+}
+.sectionForm .containerForm .formRow .colForm .inputBox input:focus ~ .line,
+.sectionForm .containerForm .formRow .colForm .inputBox input:valid ~ .line {
+    height: 100%;
+}
+.sectionForm .containerForm .formRow .colForm .inputBox.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0px;
+}
+.sectionForm .containerForm .formRow .colForm .inputBox.textarea textarea {
+    height: 100px;
+    resize: none;
+}
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:focus + .text,
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:valid + .text {
+    left: -10px;
+    top: -35px;
+}
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:focus ~ .line,
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:valid ~ .line {
+    height: 100%;
+}
+input[type="submit"] {
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background-color: CD8D7A;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 2px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.alertaRoja{
+    color: #ff0000;
+    font-weight: 500;
+    font-size: 18px;
+}
+.alertaVerde{
+    color: #2d572c;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* NAV */ 
+.nav-item a {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s ease-out;
+    font-family: 'DM Serif Display', serif; /* Fallback a una fuente serif en caso de que DM Serif Display no esté disponible */
+
+}
+.nav-item a:hover {
+    background-color: grey;
+    color: #000;
+}
+.navigation-wrap .nav-item {
+    padding: 10px;
+    transition: all 200ms linear;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler {
+    color: black;
+    font-size: 20px;
+    border: none;
+    align-items: flex-start;
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar img:hover {
+    transition: all 0.5s ease-out;
+    transform: scale(1.1);
+}
+
+.navbar-nav {
+    text-align: center;
+}
+.dropdown a:focus {
+    color: #000;
+}
+
+.dropdown-menu {
+    background-color: #cfcfcf;
+    border: none;
+}
+
+header {
+    /*background-color: #333;*/
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+}
+
+/*importacion CSS secundarios - index.css*/
+
+@import url("../css/index2.css");
+@import url("../css/reglas.css");
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.avatars img {
+    width: 15%;
+}
+
+.logo img {
+    width: 80%;
+}
+
+.izquierda {
+    display: flex;
+    justify-content: start;
+}
+
+.derecha {
+    display: flex;
+    justify-content: end;
+}
+
+.justificar {
+    text-align: justify;
+}
+
+/* lightbox1.css */
+/* estilo de la imagen utilizada para activar el modal */
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* opacidad al pasar el mouse sobre la foto */
+
+
+/*probar con 0.5*/
+
+#myImg:hover {
+    opacity: 1;
+}
+
+
+/* modal (fondo) */
+
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    /*width: 100%; 
+    height: 100%; */
+    overflow: auto;
+    /* habilitar el scroll */
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+/* contenido modal (imagen) */
+
+.modal-content {
+    margin: auto;
+    display: block;
+    margin-top: 170px;
+    /*width: 40%;*/
+    /*tamaño de la foto ancho*/
+    max-width: 700px;
+}
+
+
+/* título de la imagen modal - Igual ancho que la imagen */
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+    height: 150px;
+}
+
+
+/* agregar animación CSS en el modo modal */
+
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+
+/*botón cerrar */
+
+.close {
+    position: absolute;
+    top: -10px;
+    right: 35px;
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    transition: 0.3s;
+    background-color: #000;
+}
+
+.close:hover,
+.close:focus {
+    color: rgba(231, 176, 66, 0.87);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* 100% de ancho de imagen en pantallas más pequeñas */
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* lightbox2.css */
+.cursor {
+    cursor: pointer;
+}
+
+
+/* botón ver video*/
+
+#boton {
+    background-color: #CD8D7A;;
+    font-weight: bolder;
+    border: #fff;
+    color: #fff;
+    padding: 7px 15px;
+    display: inline-block;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+
+/* clases lightbox */
+
+.lightbox {
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: scroll;
+    position: fixed;
+    display: none;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.lightbox-container {
+    position: relative;
+    max-width: 960px;
+    margin: 10% auto;
+    padding: 0 3%;
+    height: auto;
+    z-index: 10;
+}
+
+
+/*transparencia*/
+
+.lightbox-content {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+.lightbox-close {
+    background: transparent;
+    background-color: #CD8D7A;;
+    position: absolute;
+    /* alinear al centro el boton cerrar:  */
+    /*left:40%; */
+    right: 7%;
+    max-width: 960px;
+    font-weight: 300;
+    font-size: 20px;
+    border: none;
+    color: #fff;
+    /*altura del boton X*/
+    top: -40px;
+    /*display: block;*/
+}
+
+@media (max-width: 575px) {
+    .lightbox-container {
+        margin-top: 150px !important;
+    }
+}
+
+
+/* controla las clases responsivas del vídeo */
+
+.video-container {
+    padding-bottom: 56.25%;
+    position: relative;
+    padding-top: 30px;
+    overflow: hidden;
+    height: 0;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+@media (max-width: 575px) {
+    .video-container {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+}
+
+/* tabs.css */
+/* propiedades de la caja del tabulador */
+
+.tab {
+    overflow: hidden;
+    border: 0px solid ;
+    background-color: #CD8D7A;
+    margin-top: 20px 20px;
+    /*color de la barra principal del tabulador*/
+    /*background-color: #f1f1f1;*/
+}
+
+p {
+    font-size: 20px;
+    text-align: left;
+}
+
+.tam1 {
+    font-size: 24px;
+}
+
+
+/* controla propiedades de los TABS */
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    color: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+
+/* controla el color sobre los TABS */
+
+.tab button:hover {
+    background-color: grey;
+    color: #fff;
+}
+
+
+/* controla el color activo de los TABS */
+
+.tab button.active {
+    background-color: black;
+    color: #fff;
+}
+
+
+/* controla el contenido de cada pestaña tab */
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 0px solid #ccc;
+    border-top: none;
+    background: white;
+}
+
+
+/* El efecto de animación desvanecimiento tarda 2 segundos al entrar a cada pestaña */
+
+.tabcontent {
+    animation: efect1 3s;
+}
+
+@keyframes efect1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    font-family: 'Oswald', sans-serif;
+    ;
+}
+
+.logoPie {
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+}

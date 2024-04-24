@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    font-family: 'DM Sans', sans-serif; /* Fallback a una fuente sans-serif en caso de que DM Sans no esté disponible */
+}
+
+h1, h2, h3, h4 {
+    font-family: 'DM Serif Display', serif; /* Fallback a una fuente serif en caso de que DM Serif Display no esté disponible */
+}
+
+p {
+    font-family: 'Oswald', sans-serif; /* Fallback a una fuente sans-serif en caso de que Oswald no esté disponible */
+}
+
+.banner1 {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente los elementos hijos */
+    height: 100vh 100vh; /* Establece la altura al 100% del viewport height para cubrir toda la pantalla */
+    background-size: cover;
+    background-position: center;
+    background-image: url('../imagenes/boutiqueCorrecta-min.jpg');
+    background-blend-mode: luminosity;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+    background-attachment: fixed;
+}
+
+.button1 {
+    background-color: #C3E2C2;
+    border-radius: 60px;
+    color: black;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+i {
+    font-size: 100px;
+    margin: 0px 0px 0px 0px;
+    cursor: pointer;
+}
+
+:hover.button1 {
+    background-color: #DBCC95;
+    color: black;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: white;
+}
+
+footer {
+    background-color: black;
+}
